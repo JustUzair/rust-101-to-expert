@@ -13,3 +13,4 @@ cargo run
 - ⌨️ Reading from command line; parsing to different data types;
 - 🔁 Loops - while, loop, for
 - 🎭 Anonymus Functions (Closures)
+- 🤝Match statements (switch-case)

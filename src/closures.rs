@@ -11,11 +11,11 @@ pub fn test_closures(){
     let mut res = add(127,127);
     println!("Add() closure result {:?}",res);
 
-    let mut mutateRes = || {
+    let mut mutate_res = || {
         res +=1;
         println!("Mutated Result inside closure = previous result + 1 : {}",res);
     };
-    mutateRes();
+    mutate_res();
     println!("Mutated Result outside of closure : {}",res);
 
 

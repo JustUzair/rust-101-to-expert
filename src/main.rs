@@ -1,5 +1,7 @@
 pub mod helpers;
 pub mod closures;
+pub mod match_case;
+
 
 fn main() {
     println!("Hello, world!");
@@ -36,8 +38,15 @@ fn main() {
     /* //////////////////////////////////////////////////////////////
                     Anonymus Functions (Closures)
     ////////////////////////////////////////////////////////////// */
-    closures::test_closures();
     
+    // closures::test_closures();
+
+    /* //////////////////////////////////////////////////////////////
+                    Anonymus Functions (Closures)
+    ////////////////////////////////////////////////////////////// */
+
+    match_case::test_match_int();
+
 }  
 
 
