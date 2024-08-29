@@ -1,4 +1,6 @@
 pub mod helpers;
+pub mod closures;
+
 fn main() {
     println!("Hello, world!");
     /* //////////////////////////////////////////////////////////////
@@ -31,6 +33,11 @@ fn main() {
     // test_for();
 
     
+    /* //////////////////////////////////////////////////////////////
+                    Anonymus Functions (Closures)
+    ////////////////////////////////////////////////////////////// */
+    closures::test_closures();
+    
 }  
 
 
@@ -53,7 +60,7 @@ fn test_loop() {
         print!("Counter : {}\n",counter);
         
         counter += 1;
-        if (counter > 5){
+        if counter > 5{
             break;
         }
     }
@@ -72,7 +79,7 @@ fn test_for(){
  * @dev Check if person is a valid age for a driver
  */
 
- 
+
 #[allow(dead_code)]
  fn test_if() {
     let age_to_drive = 18u8;
