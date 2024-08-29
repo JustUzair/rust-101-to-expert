@@ -28,12 +28,14 @@ fn main() {
     ////////////////////////////////////////////////////////////// */
     // test_while();
     // test_loop();
-    test_for();
+    // test_for();
 
     
 }  
 
 
+
+#[allow(dead_code)]
 fn test_while() {
     let mut counter:u8 = 0;
     while counter <= 5{
@@ -43,6 +45,8 @@ fn test_while() {
 
 }
 
+
+#[allow(dead_code)]
 fn test_loop() {
     let mut counter:u8 = 0;
     loop {
@@ -55,6 +59,8 @@ fn test_loop() {
     }
 }
 
+
+#[allow(dead_code)]
 fn test_for(){
 
     let ages:[u8; 5] = [17,46,76,12,19];
@@ -65,7 +71,10 @@ fn test_for(){
 /**
  * @dev Check if person is a valid age for a driver
  */
-fn test_if() {
+
+ 
+#[allow(dead_code)]
+ fn test_if() {
     let age_to_drive = 18u8;
 
     println!("Enter the age of the person : ");   
