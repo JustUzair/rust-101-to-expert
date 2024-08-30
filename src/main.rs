@@ -1,13 +1,13 @@
 pub mod helpers;
 pub mod closures;
 pub mod match_case;
-
+pub mod options;
 
 fn main() {
-    println!("Hello, world!");
     /* //////////////////////////////////////////////////////////////
                                 Basics 
     ////////////////////////////////////////////////////////////// */
+    // println!("Hello, world!");
     
     // test_func();
     // print_arr();
@@ -45,9 +45,27 @@ fn main() {
                     Anonymus Functions (Closures)
     ////////////////////////////////////////////////////////////// */
 
-    match_case::test_match_int();
+    // match_case::test_match_int();
+    
+    /* //////////////////////////////////////////////////////////////
+                                Option Enum
+    ////////////////////////////////////////////////////////////// */
+    let options_result =  options::test_option();
+    match options_result {
+        None => println!("Option Enum Result : None"),
+        Some(value) => println!("Option Enum Result : {}",value),
+    }
 
-}  
+    let options_result_string =  options::test_option_string();
+    match options_result_string {
+        None => println!("Option Enum Result : None"),
+        Some(value) => println!("Option Enum Result : {}",value),
+    }    
+    
+    let option_result_custom_type = options::test_custom_option_enum();
+    println!("Character type :  {}",option_result_custom_type.to_string());
+
+}
 
 
 
