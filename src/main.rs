@@ -6,6 +6,7 @@ pub mod helpers;
 pub mod match_case;
 pub mod options;
 pub mod traits;
+pub mod vectors;
 fn main() {
     /* //////////////////////////////////////////////////////////////
                                 Basics
@@ -81,12 +82,19 @@ fn main() {
     /* //////////////////////////////////////////////////////////////
                                 Traits
     ////////////////////////////////////////////////////////////// */
-    let dog = traits::Dog {};
-    let person = traits::create_person(dog);
-    person.pet.make_sound();
-    let cat = traits::Cat {};
-    let person = traits::create_person(cat);
-    person.pet.make_sound();
+    // let dog = traits::Dog {};
+    // let person = traits::create_person(dog);
+    // person.pet.make_sound();
+    // let cat = traits::Cat {};
+    // let person = traits::create_person(cat);
+    // person.pet.make_sound();
+
+    /* //////////////////////////////////////////////////////////////
+                                Vectors
+    ////////////////////////////////////////////////////////////// */
+    vectors::test_int_vector();
+    vectors::test_string_vec();
+    vectors::test_struct_vec();
 }
 
 #[allow(dead_code)]

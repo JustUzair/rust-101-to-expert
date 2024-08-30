@@ -17,3 +17,4 @@ cargo run
 - ✅ Option Enum (None, Some, Custom-Enum Type)
 - 🗺️ Structs, Tuple Structs ()
 - 🗃️ Traits & Their Implementations
+- 🌟 Vectors & Dynamic Arrays
