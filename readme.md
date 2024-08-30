@@ -15,3 +15,4 @@ cargo run
 - 🎭 Anonymus Functions (Closures)
 - 🤝 Match statements (switch-case)
 - ✅ Option Enum (None, Some, Custom-Enum Type)
+- 🗺️ Structs, Tuple Structs ()
