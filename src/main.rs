@@ -1,8 +1,11 @@
+use traits::Animal;
+
 pub mod closures;
 pub mod custom_struct;
 pub mod helpers;
 pub mod match_case;
 pub mod options;
+pub mod traits;
 fn main() {
     /* //////////////////////////////////////////////////////////////
                                 Basics
@@ -68,12 +71,22 @@ fn main() {
                                 Structs
     ////////////////////////////////////////////////////////////// */
 
-    let mut user =
-        custom_struct::create_user("0xJustUzair".to_string(), 22, "abc@gmail.com".to_string());
-    // implemented custom function to print user for the struct
-    user.print_user();
-    user.name = "JustUzair".to_string();
-    user.print_user();
+    // let mut user =
+    //     custom_struct::create_user("0xJustUzair".to_string(), 22, "abc@gmail.com".to_string());
+    // // implemented custom function to print user for the struct
+    // user.print_user();
+    // user.name = "JustUzair".to_string();
+    // user.print_user();
+
+    /* //////////////////////////////////////////////////////////////
+                                Traits
+    ////////////////////////////////////////////////////////////// */
+    let dog = traits::Dog {};
+    let person = traits::create_person(dog);
+    person.pet.make_sound();
+    let cat = traits::Cat {};
+    let person = traits::create_person(cat);
+    person.pet.make_sound();
 }
 
 #[allow(dead_code)]
