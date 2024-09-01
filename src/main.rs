@@ -1,6 +1,7 @@
 use traits::Animal;
 
 pub mod closures;
+pub mod collections;
 pub mod custom_struct;
 pub mod helpers;
 pub mod match_case;
@@ -92,9 +93,18 @@ fn main() {
     /* //////////////////////////////////////////////////////////////
                                 Vectors
     ////////////////////////////////////////////////////////////// */
-    vectors::test_int_vector();
-    vectors::test_string_vec();
-    vectors::test_struct_vec();
+    // vectors::test_int_vector();
+    // vectors::test_string_vec();
+    // vectors::test_struct_vec();
+
+    /* //////////////////////////////////////////////////////////////
+                    Collections (HashMap, HashSet)
+    ////////////////////////////////////////////////////////////// */
+
+    let my_basic_map = collections::test_basic_hashmap();
+    println!("{:?}", my_basic_map);
+    let my_basic_set = collections::test_basic_hashset();
+    println!("{:?}", my_basic_set);
 }
 
 #[allow(dead_code)]

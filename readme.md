@@ -18,3 +18,4 @@ cargo run
 - 🗺️ Structs, Tuple Structs ()
 - 🗃️ Traits & Their Implementations
 - 🌟 Vectors & Dynamic Arrays
+- 🎒 Collections (HashMaps & HashSets)
