@@ -19,3 +19,4 @@ cargo run
 - 🗃️ Traits & Their Implementations
 - 🌟 Vectors & Dynamic Arrays
 - 🎒 Collections (HashMaps & HashSets)
+- 🔄️ Iterators

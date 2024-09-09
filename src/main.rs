@@ -4,6 +4,7 @@ pub mod closures;
 pub mod collections;
 pub mod custom_struct;
 pub mod helpers;
+pub mod iterators;
 pub mod match_case;
 pub mod options;
 pub mod traits;
@@ -101,10 +102,16 @@ fn main() {
                     Collections (HashMap, HashSet)
     ////////////////////////////////////////////////////////////// */
 
-    let my_basic_map = collections::test_basic_hashmap();
-    println!("{:?}", my_basic_map);
-    let my_basic_set = collections::test_basic_hashset();
-    println!("{:?}", my_basic_set);
+    // let my_basic_map = collections::test_basic_hashmap();
+    // println!("{:?}", my_basic_map);
+    // let my_basic_set = collections::test_basic_hashset();
+    // println!("{:?}", my_basic_set);
+
+    /* //////////////////////////////////////////////////////////////
+                            Iterators
+    ////////////////////////////////////////////////////////////// */
+
+    iterators::test_rust_iterators()
 }
 
 #[allow(dead_code)]
