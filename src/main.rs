@@ -3,6 +3,7 @@ use traits::Animal;
 pub mod closures;
 pub mod collections;
 pub mod custom_struct;
+pub mod date_time;
 pub mod helpers;
 pub mod iterators;
 pub mod match_case;
@@ -108,10 +109,17 @@ fn main() {
     // println!("{:?}", my_basic_set);
 
     /* //////////////////////////////////////////////////////////////
-                            Iterators
+                                Iterators
     ////////////////////////////////////////////////////////////// */
 
-    iterators::test_rust_iterators()
+    // iterators::test_rust_iterators()
+
+    /* //////////////////////////////////////////////////////////////
+                             Date & Time
+    ////////////////////////////////////////////////////////////// */
+
+    date_time::test_time_rust_module();
+    date_time::test_chrono();
 }
 
 #[allow(dead_code)]
