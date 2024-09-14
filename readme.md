@@ -3,6 +3,7 @@
 # `Note` - To run the project or any functions, un-comment the part and execute the following command:
 
 ```bash
+cargo build
 cargo run
 ```
 
@@ -21,3 +22,4 @@ cargo run
 - 🎒 Collections (HashMaps & HashSets)
 - 🔄️ Iterators
 - 📅⌚ Date & Time (Rust Time Module + Chrono Crate)
+- 🧵 Threads (Basics)

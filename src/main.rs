@@ -8,8 +8,10 @@ pub mod helpers;
 pub mod iterators;
 pub mod match_case;
 pub mod options;
+pub mod threads;
 pub mod traits;
 pub mod vectors;
+
 fn main() {
     /* //////////////////////////////////////////////////////////////
                                 Basics
@@ -118,8 +120,14 @@ fn main() {
                              Date & Time
     ////////////////////////////////////////////////////////////// */
 
-    date_time::test_time_rust_module();
-    date_time::test_chrono();
+    // date_time::test_time_rust_module();
+    // date_time::test_chrono();
+
+    /* //////////////////////////////////////////////////////////////
+                             Threads Basics
+    ////////////////////////////////////////////////////////////// */
+
+    threads::spawn_thread();
 }
 
 #[allow(dead_code)]
